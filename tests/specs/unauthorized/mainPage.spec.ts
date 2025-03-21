@@ -1,23 +1,13 @@
-import test from '@playwright/test';
-import { MainPage } from '../../pages/MainPage';
+import { test, expect } from '../../fixture/fixtures';
 
-test('Check accessibility correct header elements', async ({ page }) => {
-  const mainPage = new MainPage(page);
-  await mainPage.open();
-  await mainPage.closeCookiesAlert();
+test('Check accessibility correct header elements', async ({ mainPage }) => {
   await mainPage.headerHasCorrectAriaSnapshot();
 });
 
-test('Check accessibility correct tab categories', async ({ page }) => {
-  const mainPage = new MainPage(page);
-  await mainPage.open();
-  await mainPage.closeCookiesAlert();
+test('Check accessibility correct tab categories', async ({ mainPage }) => {
   await mainPage.categoriesTabsHasCorrectAriaSnapshot();
 });
 
-test('Check accessibility correct menu', async ({ page }) => {
-  const mainPage = new MainPage(page);
-  await mainPage.open();
-  await mainPage.closeCookiesAlert();
+test('Check accessibility correct menu', async ({ mainPage }) => {
   await mainPage.menuHasCorrectAriaSnapshot();
 });
