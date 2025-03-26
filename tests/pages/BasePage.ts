@@ -10,4 +10,8 @@ export class BasePage {
   async closeCookiesAlert() {
     await this.page.getByLabel('Уведомление о использовании').locator('button').click();
   }
+
+  async closeInfoAlert() {
+    await this.page.getByRole('button', { name: 'Закрыть' }).click();
+  }
 }

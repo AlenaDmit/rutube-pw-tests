@@ -26,14 +26,16 @@ export class MainPage extends BasePage {
   }
 
   async headerHasCorrectAriaSnapshot() {
-    await expect(this.headerLocator).toMatchAriaSnapshot();
+    await expect(this.headerLocator).toMatchAriaSnapshot({ name: 'headerAriaSnapshot.yml' });
   }
 
   async categoriesTabsHasCorrectAriaSnapshot() {
-    await expect(this.categoriesTabsLocator).toMatchAriaSnapshot();
+    await expect(this.categoriesTabsLocator).toMatchAriaSnapshot({
+      name: 'categoriesTabsSnapshot.yml',
+    });
   }
 
   async menuHasCorrectAriaSnapshot() {
-    await expect(this.menuLocator).toMatchAriaSnapshot();
+    await expect(this.menuLocator).toMatchAriaSnapshot({ name: 'menuSnapshot.yml' });
   }
 }

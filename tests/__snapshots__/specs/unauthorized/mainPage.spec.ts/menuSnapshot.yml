@@ -3,6 +3,8 @@
     - listitem:
       - link "Главная": Главная …
     - listitem:
+      - link "Подписки …"
+    - listitem:
       - link "RUTUBE для блогеров …"
     - listitem:
       - link "Каталог …"
@@ -17,15 +19,15 @@
     - listitem:
       - link "Трансляции …"
     - listitem:
-      - link "Подписки …"
-    - listitem:
       - link "Моё …"
     - listitem:
       - link "Фильмы …"
+    - listitem:
+      - link "Весна. Любовь …"
   - separator
   - list:
     - listitem:
-      - link "Смотреть позже …"
-    - listitem:
       - link "История просмотра …"
+    - listitem:
+      - link "Смотреть позже …"
   - separator
